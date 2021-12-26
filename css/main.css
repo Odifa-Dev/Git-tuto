@@ -2,8 +2,8 @@
 :root {
   --red-color: #ed273e;
   --blue-color: #0373bd;
-  --green-color: #4e4e4e;
-  --black-color: #04b938;
+  --green-color: #04b938;
+  --black-color: #4e4e4e;
 }
 @font-face {
   font-family: "OpenSans";
