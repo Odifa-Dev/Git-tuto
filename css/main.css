@@ -1,5 +1,10 @@
 @import url("./reset.min.css");
-
+:root {
+  --red-color: #ed273e;
+  --blue-color: #0373bd;
+  --green-color: #4e4e4e;
+  --black-color: #04b938;
+}
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/OpenSans-Regular.ttf");
@@ -52,6 +57,7 @@ aside > ul > li > a {
 h1 {
   font-size: 2rem;
 }
+/* Menu */
 aside > ul > li > a {
   font-size: 1.4rem;
   text-decoration: none;
@@ -64,4 +70,39 @@ aside > ul > li > a {
 aside > ul > li:first-child {
   text-align: center;
   padding: 15px;
+}
+/* topNav */
+#topnav {
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#topnav > a {
+  grid-column: 1 / 2;
+  align-self: center;
+  justify-self: center;
+}
+#topnav .layout-color {
+  grid-column: 4/5;
+  justify-self: center;
+  align-self: center;
+}
+#topnav > .layout-color > li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.blue {
+  background-color: var(--blue-color);
+}
+.black {
+  background-color: var(--black-color);
+}
+.red {
+  background-color: var(--red-color);
+}
+.green {
+  background-color: var(--green-color);
 }
