@@ -80,6 +80,10 @@ aside > ul > li:first-child {
   grid-column: 1 / 2;
   align-self: center;
   justify-self: center;
+  font-family: "RobotoSlab", sans-serif;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #ddd;
 }
 #topnav .layout-color {
   grid-column: 4/5;
@@ -105,4 +109,21 @@ aside > ul > li:first-child {
 }
 .green {
   background-color: var(--green-color);
+}
+/* Main */
+#content {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px auto;
+}
+#content > .title {
+  align-self: center;
+}
+#content > .main {
+  padding: 0px 20px;
+}
+#content > .main > p {
+  text-align: justify;
+  line-height: 1.4;
+  text-indent: 50px;
 }
